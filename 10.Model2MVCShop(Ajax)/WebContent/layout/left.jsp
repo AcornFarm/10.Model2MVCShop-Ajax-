@@ -82,7 +82,7 @@
 	
 	<style type="text/css">
 		
-		.Depth03 div:hover { background-color: aliceblue; }
+		.Depth03 span:hover { background-color: #CCB08C; color: white; font-weight:bold; }
 	
 	</style>
 	
@@ -104,7 +104,7 @@
 							<!-- ////////////////// jQuery Event 처리로 변경됨 ///////////////////////// 
 							<a href="/user/getUser?userId=${user.userId}" target="rightFrame">개인정보조회</a>	
 							////////////////////////////////////////////////////////////////////////////////////////////////// -->
-							<div>개인정보조회</<div>
+							<span>개인정보조회</<span>
 						</td>
 					</tr>
 				</c:if>
@@ -115,7 +115,7 @@
 							<!-- ////////////////// jQuery Event 처리로 변경됨 ///////////////////////// 
 							<a href="/user/listUser" target="rightFrame">회원정보조회</a>	
 							////////////////////////////////////////////////////////////////////////////////////////////////// -->
-							<div>회원정보조회</div>
+							<span>회원정보조회</span>
 						</td>
 					</tr>
 				</c:if>
@@ -134,12 +134,12 @@
 			<table  border="0" cellspacing="0" cellpadding="0" width="159">
 				<tr>
 					<td class="Depth03" align="center">
-						<div>판매상품등록</div>
+						<span>판매상품등록</span>
 					</td>
 				</tr>
 				<tr>
 					<td class="Depth03" align="center">
-						<div>판매상품관리</div>
+						<span>판매상품관리</span>
 					</td>
 				</tr>
 				<tr>
@@ -156,14 +156,14 @@
 		<table  border="0" cellspacing="0" cellpadding="0" width="159">
 			<tr>
 				<td class="Depth03" align="center">
-					<div>상 품 검 색</div>
+					<span>상 품 검 색</span>
 				</td>
 			</tr>
 			
 			<c:if test="${ !empty user && user.role == 'user'}">
 			<tr>
 				<td class="Depth03" align="center">
-					<div>구매이력조회</div>
+					<span>구매이력조회</span>
 				</td>
 			</tr>
 			</c:if>
@@ -172,7 +172,7 @@
 				<td class="DepthEnd">&nbsp;</td>
 			</tr>
 			<tr>
-				<td class="Depth03" align="center"><div>최근 본 상품</div></td>
+				<td class="Depth03" align="center"><span>최근 본 상품</span></td>
 			</tr>
 		</table>
 	</td>

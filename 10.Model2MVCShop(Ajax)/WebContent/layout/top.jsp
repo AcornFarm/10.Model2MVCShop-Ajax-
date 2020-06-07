@@ -59,7 +59,7 @@
   </tr>
   <tr>
     <td width="800" height="50" align="center">
-    	<img class="home" src="/images/Untitled.png" style="height:50px"/>
+    	<img class="home" src="/images/titleImage.png" style="height:50px"/>
     </td>
   </tr>
   <tr>
