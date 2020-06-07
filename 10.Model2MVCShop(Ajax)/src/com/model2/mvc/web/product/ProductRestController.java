@@ -36,7 +36,11 @@ public class ProductRestController {
 		
 		System.out.println("/product/json/getProduct/{prodNo} : GET");
 		
-		return productService.getProduct(prodNo);
+		Product product = productService.getProduct(prodNo);
+		
+		System.out.println(":::::"+product);
+		
+		return product;
 		
 	}
 	

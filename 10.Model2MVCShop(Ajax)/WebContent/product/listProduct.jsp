@@ -15,6 +15,8 @@
 </script>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 <script type="text/javascript">
 
@@ -52,7 +54,7 @@
 	  	
 		
 		var prodNo = $(this).prev().prev().text();
-		self.location ="/product/getProduct?prodNo="+prodNo+"+&menu=${param.menu}";
+		self.location ="/product/getProduct?prodNo="+prodNo+"+&menu=${param.menu}"; 
 		
 		
 	});
@@ -73,8 +75,6 @@
 	
 	
 	
-	
-	
 });	
 
 </script>
@@ -87,6 +87,7 @@
  
 <form name="detailForm">
 
+ 
 
 
 <table width="100%" height="37" border="0" cellpadding="0"	cellspacing="0">
@@ -208,7 +209,10 @@
 		<td></td>
 		<td align="left">${pvo.regDate}</td>
 		<td></td>	
+		
 		<td align="left">
+		
+		
 		
 	<c:if test="${param.menu=='search'}">
 			<c:choose>
@@ -247,6 +251,7 @@
 	</tr>
 	</c:forEach>
 </table>
+	<span id="add" style="display:hidden;"></span>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
 	<tr>

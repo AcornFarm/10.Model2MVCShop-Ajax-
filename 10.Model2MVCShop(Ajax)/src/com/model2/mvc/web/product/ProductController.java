@@ -40,7 +40,7 @@ public class ProductController {
 	//setter Method 구현 않음
 	
 	@Autowired
-	@Qualifier("uploadPath")
+	@Qualifier("uploadPath") //common-servlet 에서 업로드할 path가져오기.
 	private String uploadPath;
 		
 	public ProductController(){

@@ -39,7 +39,11 @@
 									var displayValue = "<h3>"
 																+"물품 번호 : "+JSONData.purchaseProd.prodNo+"<br/>"
 																+"상품 상세 : "+JSONData.purchaseProd.prodDetail+"<br/>"
-																+"가격 : "+JSONData.purchaseProd.price+"<br/></h3>";
+																+"가격 : "+JSONData.purchaseProd.price+"<br/>"
+																+"구매자 이름 : "+JSONData.receiverName+"<br/>"
+																+"구매자 연락처 : "+JSONData.receiverPhone+"<br/>"
+																+"구매자 주소 : "+JSONData.divyAddr+"<br/><h3>";
+																
 																
 									$("h3").remove();
 									$("#"+tranNo+"").html(displayValue); 
