@@ -56,6 +56,10 @@
 		<property name="maxUploadSize" value="10485760"/>
 	</bean>
 	
+	<bean id="uploadPath" class="java.lang.String">
+		<constructor-arg value="C:\Users\user\git\10.Model2MVCShop-Ajax-\10.Model2MVCShop(Ajax)\WebContent\images\uploadFiles\"/>
+	</bean>
+	
 	<!--	
 		■ / 형식의 Mapping 은 모든(정적,동적 자원) 요청시 처리책임
 		■ 정적자원 요청시 DispatcherServlet 에게 처리방법지정

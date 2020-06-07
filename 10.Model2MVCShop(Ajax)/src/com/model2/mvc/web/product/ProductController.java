@@ -38,6 +38,10 @@ public class ProductController {
 	@Qualifier("productServiceImpl")
 	private ProductService productService;
 	//setter Method 구현 않음
+	
+	@Autowired
+	@Qualifier("uploadPath")
+	private String uploadPath;
 		
 	public ProductController(){
 		System.out.println(this.getClass());
@@ -71,10 +75,11 @@ public class ProductController {
 		Map<String, MultipartFile> files = request.getFileMap();
 		CommonsMultipartFile cmf  = (CommonsMultipartFile) files.get("uploadFile");
 		
-		String path = "C:\\workspace\\10.Model2MVCShop(Ajax)\\WebContent\\images\\uploadFiles\\"
-		+cmf.getOriginalFilename();
+		String path=uploadPath+cmf.getOriginalFilename();
 		
 		File f = new File(path);
+		
+		System.out.println(path);
 		
 		cmf.transferTo(f);
 		
